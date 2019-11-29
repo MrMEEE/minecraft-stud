@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /deployments/storage/
+
+cp /deployements/server.properties /deployments/storage/
+cp /deployements/eula.txt /deployments/storage/
+
+java -Xmx1024M -Xms1024M -jar /deployments/server.jar nogui 
